@@ -13,7 +13,15 @@ $.ajax({
  console.log(response)
 
 });
+function getWeather(){}
 
+var getWeather = function(data) {
+  var temp = data.main.temp;
+  var description = data.weather[0].description;
+  var place = data.name;
+}
+
+ console.log(weather)
 
 var weatherDiv = $('<div>')
 var p = $('<p>').text(results[i].rating)
