@@ -5,23 +5,37 @@
 </head>
 
 <body>
-<header>
+
+
     <div class="header">
       <h1>Weather App</h1>
     </div>
-</header>
 
-<div class="sidenav">
-    <a href="#">City 1</a>
-    <a href="#">City 2</a>
-    <a href="#">City 3</a>
-    <a href="#">City 4</a>
-</div>
-  
-
+    <div class="row">
+        <div class="column left" style="background-color:#aaa;">
+          <h2>List of Cities</h2>
+            <form>
+                <input type="text" name="city">
+                <input type="submit" value="Submit">
+            </form>
 
 
-<script src="script.js"></script>
+
+        </div>
+        <div class="column right" style="background-color:#bbb;">
+          <h2>Weather Data</h2>
+
+          <div class="forecast">
+
+            
+          </div>
+          
+        </div>
+    </div>
+ 
+
+ 
+    <script src="script.js"></script>
 
 
 </body>

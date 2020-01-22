@@ -15,6 +15,8 @@ $.ajax({
 });
 function getWeather(){}
 
+document.getElementById="#Weather";
+
 var getWeather = function(data) {
   var temp = data.main.temp;
   var description = data.weather[0].description;

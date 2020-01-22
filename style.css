@@ -5,20 +5,34 @@
     width: auto;
     text-align: center;
     color: white;
+    margin-bottom: 40px;
 
 }
 
-.sidenav {
-    height: 100%; 
-    width: 160px; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0;
-    left: 0;
-    background-color:white;
-    overflow-x: hidden; 
-    padding-top: 20px;
-    float: left;
+
+* {
+    box-sizing: border-box;
   }
+  
+.column {
+    float: left;
+    padding: 10px;
+    height:500px;
+  }
+  
+  .left {
+    width: 25%;
+  }
+  
+  .right {
+    width: 75%;
+  }
+  
+.forecast{
+    margin-top:40px;
+    height: 75px;
+    background-color: blue;
+}
+
 
 
