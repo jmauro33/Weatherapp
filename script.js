@@ -9,40 +9,27 @@ var getWeather = function () {
     method: "GET"
   }).then(function (response) {
 
-
-
     console.log(response)
-
 
   });
 }
 
-  // get the parts of the data you need
-  
-  // select your dom elements and append the data
+function getWeather(data) {
 
-  function getWeather(data){
+   console.log(data)
 
-     var temp = response.main.temp;
-     var desc = response.weather[0].description;
-     var place = response.name.place;
+    var temp = response.main.temp;
+    var desc = response.weather[0].description;
+    var place = response.name.place;
+    
 
-      console.log(data)
-
-  };
-
-     var weather = $('<div>')
-     var p = $('<p>').text(weather.data)
-     var weatherImage = $('<img>').attr()
-     weatherDiv.append(p)
-     $("#weatherdata").prepend(weather);
-  
-  
+   for (var i = 0; i < weather.data; i++) 
+   
+    var weather = $('<div>')
+    var p = $('<p>').text(weather.data)
+    var weatherImage = $('<img>').attr()
+    weather.append(p)
+    $("#weatherdata").prepend(weather)
 
 
-
-
-
-
-
-
+};
