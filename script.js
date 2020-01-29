@@ -1,3 +1,6 @@
+var temp =""
+var desc =""
+var place=""
 
 var weather = $(this).attr("data-weather");
 var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=kansas+city&APPID=dddc28a98071661cf0d3e17f3a345892";
@@ -7,49 +10,30 @@ var getWeather = function () {
     url: queryURL,
     method: "GET"
 
-  }).then(function getWeather (response) {
+  })
+  .then(function getWeather (response) {
 
-    console.log(response)
 
-  for (var i= 0; i < weather.response; i++)
+  console.log(queryURL);
 
-  var response = main.response.temp;
-  var response = data.weather[0].description
-  var response = data.place;
 
-    
-  });
-}
+  console.log(response);
 
-function showCity (city) {
-
-  console.log(city)
-
-  var city = main.city;
   
-  for (var i = 0; i < main.city; i++)
+  $(".city").html("<h1>" + response.name + " Weather Details</h1>");
+  $(".wind").text("Wind Speed: " + response.wind.speed);
+  $(".humidity").text("Humidity: " + response.main.humidity);
+  $(".temp").text("Temperature (F) " + response.main.temp);
 
-  var city = location;
+
+  var tempF = (response.main.temp - 273.15) * 1.80 + 32;
+  $(".tempF").text("Temperature (Kelvin) " + tempF);
+
+
+  console.log("Wind Speed: " + response.wind.speed);
+  console.log("Humidity: " + response.main.humidity);
+  console.log("Temperature (F): " + response.main.temp);
+});
+
+
 }
-
-
-
-
-
-function showWeather(data) {
-
-   console.log(data)
-
-    var data = main.data.temp;
-    var data = data.weather[0].description;
-    var data = data.place;
-
-
-   for (var i = 0; i < weather.data; i++) 
-   
-    var weather = $('<div>')
-    var p = $('<p>').text(weather.data)
-    weather.append(p)
-    $("#data-weather").prepend(weather)
-
-};
