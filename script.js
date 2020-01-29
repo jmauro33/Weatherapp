@@ -1,17 +1,16 @@
-var temp =""
-var desc =""
-var place=""
+
+var APIKey = "ddc28a98071661cf0d3e17f3a345892";
 
 var weather = $(this).attr("data-weather");
-var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=kansas+city&APPID=dddc28a98071661cf0d3e17f3a345892";
+var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
+"q=Kansas+City,Missouri&units=imperial&appid=" + APIKey;
 
-var getWeather = function () {
   $.ajax({
     url: queryURL,
     method: "GET"
 
   })
-  .then(function getWeather (response) {
+  .then(function(response) {
 
 
   console.log(queryURL);
@@ -36,4 +35,4 @@ var getWeather = function () {
 });
 
 
-}
+

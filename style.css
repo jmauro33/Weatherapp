@@ -33,6 +33,11 @@
     height: 75px;
     background-color: blue;
 }
+  .box{
+
+    border: black;
+    border-radius: 1px;
+  }
 
 
 
