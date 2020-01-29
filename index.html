@@ -1,57 +1,71 @@
 <html>
+
 <head>
-    <title>Simple Weather Widget</title>
-    <link href="style.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Simple Weather Widget</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
 
 
-    <div class="header">
-      <h1>Weather App</h1>
+  <div class="header">
+    <h1>Weather App</h1>
+  </div>
+
+  <div class="row">
+    <div class="column left" style="background-color:#aaa;">
+      <h2>List of Cities</h2>
+      <form>
+        <input type="text" name="city">
+        <input type="submit" value="Submit">
+      </form>
+
+
+
     </div>
 
-    <div class="row">
-        <div class="column left" style="background-color:#aaa;">
-          <h2>List of Cities</h2>
-            <form>
-                <input type="text" name="city">
-                <input type="submit" value="Submit">
-            </form>
+    <div class="column right" style="background-color:#bbb;">
+      <h2>Weather Data</h2>
+
+      <div class="current-conditions">
+        <h3>Current Conditions for your location</h3>
+
+        
+        <p>Temp</p>
+        <p>Wind Speed</p>
+        <p>Humidity</p>
+      
+
+      </div>
 
 
-
-        </div>
-        <div class="column right" style="background-color:#bbb;">
-          <h2>Weather Data</h2>
-
-          <div class="current-conditions">
-            <h3>Current Conditions for your location</h3>
-
+      <div class="forecast">
+        <h4>Daily Forecast</h4>
+        <div class="row">
+          <div class="day">
+            <div class="card"></div>
           </div>
-
-
-          <div class="forecast">
-            
-              <table>
-                <tr>
-                  <td>Sunday</td>
-                  <td>Monday</td>
-                  <td>Tuesday</td>
-                  <td>Wednesday</td>
-                  <td>Thursday</td>
-                  <td>Friday</td>
-                  <td>Saturday</td>
-                </tr>
-              </table>
-           
-
+          <div class="day">
+            <div class="card"></div>
           </div>
-          
+          <div class="day">
+            <div class="card"></div>
+          </div>
+          <div class="day">
+            <div class="card"></div>
+          </div>
+          <div class="day">
+            <div class="card"></div>
+          </div>
         </div>
+      </div>
     </div>
-    <script type="text/javascript" src="script.js"></script>
+  </div>
+
+
+
+  <script type="text/javascript" src="script.js"></script>
 
 </body>
 

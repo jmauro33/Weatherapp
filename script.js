@@ -2,6 +2,7 @@
 var APIKey = "ddc28a98071661cf0d3e17f3a345892";
 
 var weather = $(this).attr("data-weather");
+
 var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
 "q=Kansas+City,Missouri&units=imperial&appid=" + APIKey;
 
@@ -12,7 +13,7 @@ function getWeather (response){
     method: "GET"
 
   })
-  
+
   .then(function(response) {
 
 
