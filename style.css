@@ -28,16 +28,22 @@
     width: 75%;
   }
   
+.current-conditions {
+
+  
+  height: 90px;
+  background-color: blue;
+  margin-bottom:30px;
+
+}
+
+
 .forecast{
-    margin-top:40px;
-    height: 75px;
+    margin-top:50px;
+    height: 90px;
     background-color: blue;
 }
-  .box{
-
-    border: black;
-    border-radius: 1px;
-  }
+ 
 
 
 

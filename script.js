@@ -5,11 +5,14 @@ var weather = $(this).attr("data-weather");
 var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
 "q=Kansas+City,Missouri&units=imperial&appid=" + APIKey;
 
+function getWeather (response){
+
   $.ajax({
     url: queryURL,
     method: "GET"
 
   })
+  
   .then(function(response) {
 
 
@@ -34,5 +37,6 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
   console.log("Temperature (F): " + response.main.temp);
 });
 
+};
 
 
