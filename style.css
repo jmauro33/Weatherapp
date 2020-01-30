@@ -17,7 +17,7 @@
 .column {
     float: left;
     padding: 10px;
-    height:550px;
+    height:600px;
   }
   
   .left {
@@ -31,7 +31,7 @@
 .current-conditions {
 
   
-  height: 190px;
+  height: 220px;
   background-color:blue;
   margin-bottom:30px;
 
@@ -40,7 +40,7 @@
 
 .forecast{
     margin-top:50px;
-    height: 200px;
+    height: 220px;
     background-color: blue;
 }
 
@@ -50,7 +50,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
   padding: 16px;
   width:120px;
-  height:140px;
+  height:150px;
   text-align: center;
   background-color: #f1f1f1;
 }
